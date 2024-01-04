@@ -1,12 +1,14 @@
 .navbar {
-  background-color: #9c7777; /* Black background */
-  color: #fff; /* White text */
+  background-color: #ffffff; /* Black background */
+  color: #050505; /* White text */
   padding: 20px;
   display: flex; /* Make the items horizontal */
   justify-content: space-around; /* Distribute items evenly */
   border-radius: 5px;
 }
-
+.logo {
+  margin-right: 450px;
+}
 .navbar ul {
   list-style: none; /* Remove default bullets */
   margin: 0; /* Remove default margins */
@@ -24,8 +26,11 @@
   display: flex;
   align-items: center;
 }
+.down a:hover{
+  background-color: blue;
 
+}
 .navbar a:hover {
-  background-color: #ddd; /* Add a hover effect */
+  color: rgb(148, 11, 75); /* Add a hover effect */
   border-radius: 5px;
 }

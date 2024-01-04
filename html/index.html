@@ -3,33 +3,64 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="../img/logo.png" />
     <link rel="stylesheet" href="../styles/portfolio.css" />
     <link rel="stylesheet" href="../styles/navbar.css" />
-    <title>Document</title>
+    <title>Printo Arefin</title>
   </head>
   <body>
     <nav class="navbar">
       <div class="logo">
         <a href="#"
-          ><img src="../img/logo.png" alt="Your Logo" height="25" width="25"
+          ><img src="../img/logo.png" alt="Logo" height="25" width="25"
         /></a>
       </div>
       <ul>
-        <li><a href="aboutme">About me</a></li>
-        <li><a href="#">Skills</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
         <li>
-          <a
-            href="https://drive.google.com/file/d/1gjw0mn0rsD9iXO0M-odW2wzErFnMX2Zp/view?usp=sharing"
-            >Download CV</a
-          >
+          <a href="#aboutme"><b>About me</b></a>
+        </li>
+        <li>
+          <a href="#skills"><b>Skills</b></a>
+        </li>
+        <li>
+          <a href="#"><b>Projects</b></a>
+        </li>
+        <li>
+          <a href="#"><b>Contact</b></a>
+        </li>
+        <li class="down">
+          <button class="btn">
+            <a
+              href="https://drive.google.com/file/d/1gjw0mn0rsD9iXO0M-odW2wzErFnMX2Zp/view?usp=sharing"
+              ><b
+                ><img src="../img/download.jpg" height="15" width="20" />
+                Download CV</b
+              ></a
+            >
+          </button>
         </li>
       </ul>
     </nav>
-    <header>
-      <p>Welcome to my portfolio</p>
-    </header>
+    <div class="container">
+      <header>
+        <div class="intro">
+          <h1>
+            Hey there!<br />
+            I'm Prionto Arefin Prio,
+          </h1>
+          <br />
+          <p>
+            A web developer who takes the "P"s in programming seriously.
+            Passionate, precise, and playful, I love crafting digital
+            experiences that spark joy and solve problems. Dive into my
+            portfolio and see how I can bring your vision to life!
+          </p>
+        </div>
+        <div class="img">
+          <img src="../img/prio.jpg" height="300" width="300" />
+        </div>
+      </header>
+    </div>
 
     <section id="aboutme">
       <h2>About Me</h2>
@@ -41,7 +72,7 @@
       </p>
     </section>
 
-    <section class="skills">
+    <section class="skills" id="skills">
       <h2>Skills</h2>
       <ul>
         <li>HTML5</li>
