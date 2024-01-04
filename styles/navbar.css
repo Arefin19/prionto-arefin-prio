@@ -1,0 +1,31 @@
+.navbar {
+  background-color: #9c7777; /* Black background */
+  color: #fff; /* White text */
+  padding: 20px;
+  display: flex; /* Make the items horizontal */
+  justify-content: space-around; /* Distribute items evenly */
+  border-radius: 5px;
+}
+
+.navbar ul {
+  list-style: none; /* Remove default bullets */
+  margin: 0; /* Remove default margins */
+}
+
+.navbar li {
+  display: inline-block; /* Make the items inline */
+  margin-right: 20px; /* Add spacing between items */
+}
+
+.navbar a {
+  text-decoration: none; /* Remove link underlines */
+  color: inherit; /* Inherit text color from .navbar */
+  padding: 10px; /* Add padding to links */
+  display: flex;
+  align-items: center;
+}
+
+.navbar a:hover {
+  background-color: #ddd; /* Add a hover effect */
+  border-radius: 5px;
+}
