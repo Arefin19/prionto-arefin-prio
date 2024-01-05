@@ -1,7 +1,7 @@
 .navbar {
   background-color: #ffffff; /* Black background */
   color: #050505; /* White text */
-  padding: 20px;
+  padding: 12px;
   display: flex; /* Make the items horizontal */
   justify-content: space-around; /* Distribute items evenly */
   border-radius: 5px;
@@ -22,16 +22,29 @@
 .navbar a {
   text-decoration: none; /* Remove link underlines */
   color: inherit; /* Inherit text color from .navbar */
-  padding: 10px; /* Add padding to links */
+  /* Add padding to links */
   display: flex;
   align-items: center;
 }
 .btn {
   background-color: rgb(240, 173, 206);
+  color: #050505;
   border: none;
   border-radius: 5px;
+  padding: 10px 15px;  
 }
-
+.btn img {
+  height: 10px; 
+  width: 15px; 
+}
+.btn a {
+  text-decoration: none;
+  color: #050505;
+}
+.btn a:hover {
+  color: rgb(148, 11, 75); 
+  border-radius: 5px;
+}
 .navbar a:hover {
   color: rgb(148, 11, 75); /* Add a hover effect */
   border-radius: 5px;

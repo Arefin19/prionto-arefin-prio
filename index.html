@@ -23,17 +23,17 @@
           <a href="#skills"><b>Skills</b></a>
         </li>
         <li>
-          <a href="#"><b>Projects</b></a>
+          <a href="#project"><b>Projects</b></a>
         </li>
         <li>
-          <a href="#"><b>Contact</b></a>
+          <a href="#contact"><b>Contact</b></a>
         </li>
         <li class="down">
           <button class="btn">
             <a
               href="https://drive.google.com/file/d/1gjw0mn0rsD9iXO0M-odW2wzErFnMX2Zp/view?usp=sharing"
               ><b
-                ><img src="./img/download.png" height="15" width="20" />
+                ><img src="./img/download.png" height="10" width="15" />
                 Download CV</b
               ></a
             >
@@ -55,6 +55,18 @@
             experiences that spark joy and solve problems. Dive into my
             portfolio and see how I can bring your vision to life!
           </p>
+          <button class="btn">
+            <a
+              href="https://drive.google.com/file/d/1gjw0mn0rsD9iXO0M-odW2wzErFnMX2Zp/view?usp=sharing"
+              ><b
+                ><img src="./img/download.png" height="10" width="15" />
+                Download CV</b
+              ></a
+            >
+          </button>
+          <button class="btn">
+            <a href="#contact"><b> Connect me</b></a>
+          </button>
         </div>
         <div class="img">
           <img src="./img/prio.jpg" height="300" width="300" />
@@ -64,12 +76,14 @@
 
     <section id="aboutme">
       <h2>About Me</h2>
-      <p>
-        As a fresh graduate I’m eager to apply my academic knowledge in the
-        professional field. I would love to contribute to the company’s benefit
-        which indirectly help me for my personal growth. So I believe in growing
-        together with my company.
-      </p>
+      <div class="aboutme">
+        <p>
+          As a fresh graduate I’m eager to apply my academic knowledge in the
+          professional field. I would love to contribute to the company’s
+          benefit which indirectly help me for my personal growth. So I believe
+          in growing together with my company.
+        </p>
+      </div>
     </section>
 
     <section class="skills" id="skills">
@@ -84,7 +98,7 @@
       </ul>
     </section>
 
-    <section class="projects">
+    <section class="projects" id="project">
       <h2>Projects</h2>
       <div class="project">
         <h3>Project 1</h3>
@@ -101,6 +115,20 @@
           consectetur adipiscing elit.
         </p>
         <img src="project2.jpg" alt="Project 2" />
+      </div>
+    </section>
+    <section id="contact">
+      <h2>contact</h2>
+      <div class="contact-form">
+        <form action="send_email.php" method="post">
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Your Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
       </div>
     </section>
 

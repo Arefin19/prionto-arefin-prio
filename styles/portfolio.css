@@ -9,7 +9,17 @@ body {
   max-width: 100%; /* Adjust the maximum width of the container */
   margin: 0 auto; /* Center the container */
 }
-
+.container .img {
+  margin-right: 90px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.container .img img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+}
 header {
   background-color: #333;
   color: white;
@@ -36,10 +46,8 @@ header {
   font-size: 18px;
   margin-top: 10px;
 }
-.img {
-  margin-right: 90px;
-  border-radius: 50%;
-  overflow: hidden;
+.intro .btn {
+  margin-right: 20px; /* Adjust the value as needed */
 }
 .img img {
   width: 300px;
@@ -99,7 +107,37 @@ p {
   height: auto;
   border-radius: 5px;
 }
+#contact {
+  text-align: center;
+  padding: 20px;
+}
 
+.contact-form {
+  max-width: 400px;
+  margin: auto;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+.contact-form button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
 footer {
   text-align: center;
   padding: 1em 0;
