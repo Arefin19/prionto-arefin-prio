@@ -26,10 +26,12 @@
   display: flex;
   align-items: center;
 }
-.down a:hover{
-  background-color: blue;
-
+.btn {
+  background-color: rgb(240, 173, 206);
+  border: none;
+  border-radius: 5px;
 }
+
 .navbar a:hover {
   color: rgb(148, 11, 75); /* Add a hover effect */
   border-radius: 5px;
