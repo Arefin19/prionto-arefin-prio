@@ -1,124 +1,42 @@
+
+/*#######################################3
+*/
 @media screen and (max-width: 600px) {
-  /* Add styles for small screens here */
   .navbar {
     flex-direction: column;
     align-items: center;
-    background-color: #ffffff; /* Black background */
-    color: #050505; /* White text */
-    padding: 12px;
-    display: flex; /* Make the items horizontal */
-    justify-content: space-around; /* Distribute items evenly */
-    border-radius: 5px;
-  }
-  .logo {
-    margin-right: 0;
-  }
-  /* Add more adjustments as needed */
-  .navbar ul {
-    list-style: none; /* Remove default bullets */
-    margin: 0; /* Remove default margins */
-  }
-  .navbar li {
-    display: inline-block; /* Make the items inline */
-    margin-right: 20px; /* Add spacing between items */
   }
 
-  .navbar a {
-    text-decoration: none; /* Remove link underlines */
-    color: inherit; /* Inherit text color from .navbar */
-    /* Add padding to links */
-    display: flex;
-    align-items: center;
+  .logo {
+    margin-bottom: 10px;
   }
-  .btn {
-    background-color: rgb(240, 173, 206);
-    color: #050505;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 15px;
+
+  .intro h1 {
+    font-size: 20px;
   }
-  .btn img {
-    height: 10px;
-    width: 15px;
+
+  .img {
+    margin-right: 0;
   }
-  .btn a {
-    text-decoration: none;
-    color: #050505;
-  }
-  .btn a:hover {
-    color: rgb(148, 11, 75);
-    border-radius: 5px;
-  }
-  .navbar a:hover {
-    color: rgb(148, 11, 75); /* Add a hover effect */
+
+  .project img {
+    max-width: 100%;
+    height: auto;
     border-radius: 5px;
   }
 }
-
-@media screen and (max-width: 768px) {
-  /* Add styles for medium screens here */
-  .navbar {
-    flex-direction: column;
-    align-items: center;
-    background-color: #ffffff; /* Black background */
-    color: #050505; /* White text */
-    padding: 12px;
-    display: flex; /* Make the items horizontal */
-    justify-content: space-around; /* Distribute items evenly */
-    border-radius: 5px;
-  }
-  .logo {
-    margin-right: 0;
-  }
-  /* Add more adjustments as needed */
-  .navbar ul {
-    list-style: none; /* Remove default bullets */
-    margin: 0; /* Remove default margins */
-  }
-  .navbar li {
-    display: inline-block; /* Make the items inline */
-    margin-right: 20px; /* Add spacing between items */
-  }
-
-  .navbar a {
-    text-decoration: none; /* Remove link underlines */
-    color: inherit; /* Inherit text color from .navbar */
-    /* Add padding to links */
-    display: flex;
-    align-items: center;
-  }
-  .btn {
-    background-color: rgb(240, 173, 206);
-    color: #050505;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 15px;
-  }
-  .btn img {
-    height: 10px;
-    width: 15px;
-  }
-  .btn a {
-    text-decoration: none;
-    color: #050505;
-  }
-  .btn a:hover {
-    color: rgb(148, 11, 75);
-    border-radius: 5px;
-  }
-  .navbar a:hover {
-    color: rgb(148, 11, 75); /* Add a hover effect */
-    border-radius: 5px;
-  }
-}
-
+/*
+#############################################3
+*/
 .navbar {
   background-color: #ffffff; /* Black background */
   color: #050505; /* White text */
   padding: 12px;
+  flex-direction: row;
   display: flex; /* Make the items horizontal */
   justify-content: space-around; /* Distribute items evenly */
   border-radius: 5px;
+  width: 100%;
 }
 .logo {
   margin-right: 450px;
