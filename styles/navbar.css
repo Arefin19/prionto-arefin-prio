@@ -11,7 +11,7 @@
     border-radius: 5px;
   }
   .logo {
-    margin-right: 450px;
+    margin-right: 0;
   }
   /* Add more adjustments as needed */
   .navbar ul {
@@ -58,6 +58,8 @@
 @media screen and (max-width: 768px) {
   /* Add styles for medium screens here */
   .navbar {
+    flex-direction: column;
+    align-items: center;
     background-color: #ffffff; /* Black background */
     color: #050505; /* White text */
     padding: 12px;
@@ -66,13 +68,13 @@
     border-radius: 5px;
   }
   .logo {
-    margin-right: 450px;
+    margin-right: 0;
   }
+  /* Add more adjustments as needed */
   .navbar ul {
     list-style: none; /* Remove default bullets */
     margin: 0; /* Remove default margins */
   }
-
   .navbar li {
     display: inline-block; /* Make the items inline */
     margin-right: 20px; /* Add spacing between items */
