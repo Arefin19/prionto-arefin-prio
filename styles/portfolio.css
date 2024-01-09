@@ -114,20 +114,17 @@ p {
 
 .skills {
   margin-top: 1.5em;
-  margin: 0 auto;
 }
+
 .skills h2 {
   text-align: center;
 }
-.skills ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+
+.skills .container {
+  padding: 20px;
 }
 
-.skills li {
+.skills .skill-item {
   margin: 0.5em;
   padding: 0.5em 1em;
   background-color: #333;
@@ -135,12 +132,17 @@ p {
   border-radius: 3px;
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
 }
-.skills li img {
+
+.skills .skill-item img {
   width: 30px; /* Set the width of the skill logo */
   margin-right: 10px; /* Add some spacing between the logo and text */
 }
+
+.skills .skill-item span {
+  flex-grow: 1; /* Allow the text to grow and fill available space */
+}
+
 
 time.present {
   font-weight: bold;
