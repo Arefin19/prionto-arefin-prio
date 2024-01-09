@@ -103,8 +103,7 @@ section {
 }
 
 h1,
-h2,
-h3 {
+h2 {
   color: #333;
 }
 
@@ -143,7 +142,6 @@ p {
   flex-grow: 1; /* Allow the text to grow and fill available space */
 }
 
-
 time.present {
   font-weight: bold;
   color: green; /* You can choose any color you prefer */
@@ -161,7 +159,7 @@ time.present {
   height: 70%;
   object-fit: cover;
   border-radius: 5px;
-} 
+}
 
 .projects {
   margin-top: 50px;

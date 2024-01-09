@@ -58,6 +58,10 @@
   display: flex;
   align-items: center;
 }
+.navbar .btn a {
+  text-decoration: none;
+  color: #050505;
+}
 .btn {
   background-color: rgb(240, 173, 206);
   color: #050505;
@@ -71,10 +75,10 @@
 }
 .btn a {
   text-decoration: none;
-  color: #050505;
+  color: #fff;
 }
 .btn a:hover {
-  color: rgb(148, 11, 75);
+  color: white;
   border-radius: 5px;
 }
 .navbar a:hover {
