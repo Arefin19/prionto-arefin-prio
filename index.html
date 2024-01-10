@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="./styles/navbar.css" />
   <link rel="stylesheet" href="./styles/footer.css">
   <title>Printo Arefin</title>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </head>
 
 <body>
@@ -197,20 +198,35 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <section id="contact">
-    <h2>contact</h2>
+    <h2>Contact Us</h2>
     <div class="contact-form">
-      <form action="send_email.php" method="post">
-        <label for="email">Your Email:</label>
-        <input type="email" id="email" name="email" required />
-
-        <label for="message">Your Message:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
-
-        <button type="submit">Send Message</button>
-      </form>
+        <form id="contactForm">
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required />
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="button" onclick="sendEmail()">Send Message</button>
+        </form>
     </div>
-  </section>
+</section>
 
+<script>
+    emailjs.init("fAnZv2MzwFHKZ82Zv"); // Replace with your Email.js user ID
+
+    function sendEmail() {
+        var templateParams = {
+            email: document.getElementById("email").value,
+            message: document.getElementById("message").value
+        };
+
+        emailjs.send("service_b86qqrm", "template_fgiygmi", templateParams)
+            .then(function(response) {
+                console.log("Email sent successfully:", response);
+            }, function(error) {
+                console.error("Email sendings failed:", error);
+            });
+    }
+</script>
   <footer>
     <div class="footer-container">
       <div class="footer-left">
@@ -225,43 +241,43 @@
       </div>
       <div class="footer-center">
         <h3>Support</h3>
-        </div>
-        <div class="footer-right">
-          <h3>Get in touch</h3>  
-          <ul class="social-links">
-            <li>
-              <a href="https://www.facebook.com/arefine.prio">
-                <img src="./img/facebook-logo.png" alt="Facebook">
-              </a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/prionto_arefin">
-                <img src="./img/instagram-logo.jpg" alt="Instagram">
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/Arefin19">
-                <img src="./img/github-logo.png" alt="GitHub">
-              </a>
-            </li>
-            <li>
-              <a href="https://discord.com/priontoarefin">
-                <img src="./img/discord-logo.png" alt="discord">
-              </a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/prionto-arefin-prio/">
-                <img src="./img/linkedin.png" alt="linkedin">
-              </a>
-            </li>
-          </ul>
-        </div>
-        
+      </div>
+      <div class="footer-right">
+        <h3>Get in touch</h3>
+        <ul class="social-links">
+          <li>
+            <a href="https://www.facebook.com/arefine.prio">
+              <img src="./img/facebook-logo.png" alt="Facebook">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/prionto_arefin">
+              <img src="./img/instagram-logo.jpg" alt="Instagram">
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/Arefin19">
+              <img src="./img/github-logo.png" alt="GitHub">
+            </a>
+          </li>
+          <li>
+            <a href="https://discord.com/priontoarefin">
+              <img src="./img/discord-logo.png" alt="discord">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/prionto-arefin-prio/">
+              <img src="./img/linkedin.png" alt="linkedin">
+            </a>
+          </li>
+        </ul>
+      </div>
+
     </div>
     <div class="footer-bottom">
-      </div>
+    </div>
   </footer>
-  
+
 </body>
 
 </html>

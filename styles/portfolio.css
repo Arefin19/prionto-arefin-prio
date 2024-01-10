@@ -219,6 +219,37 @@ img {
   color: #fff;
   font-size: 20px;
 }
+/* #contact {
+  text-align: center;
+  padding: 20px;
+}
+
+.contact-form {
+  max-width: 400px;
+  margin: auto;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+.contact-form button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+} */
 #contact {
   text-align: center;
   padding: 20px;
