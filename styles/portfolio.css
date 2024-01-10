@@ -1,37 +1,3 @@
-@media screen and (max-width: 768px) {
-  .intro h1 {
-    font-size: 24px;
-  }
-
-  .containerintro header {
-    padding: 10px;
-  }
-}
-/*
-###################################################
-*/
-@media screen and (max-width: 600px) {
-  .containerintro {
-    flex-direction: column;
-  }
-
-  .containerintro header {
-    text-align: center;
-  }
-  .intro h1 {
-    font-size: 20px;
-  }
-
-  .img {
-    margin-right: 0;
-  }
-
-  .project img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-  }
-}
 /*
 ###########################################3
 */
@@ -280,4 +246,44 @@ img {
   padding: 10px 20px;
   border: none;
   cursor: pointer;
+}
+
+/*
+###################################################
+*/
+@media (max-width: 670px) {
+  header {
+    flex-direction: column; /* Display items in a column for smaller screens */
+    align-items: center; /* Center items in the column */
+  }
+
+  .intro {
+    max-width: 100%; /* Adjust for smaller screens */
+    padding-right: 0;
+    text-align: center; /* Center text in the column */
+    margin: 20px 0;
+  }
+
+  .intro h1 {
+    font-size: 30px;
+  }
+
+  .intro p {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .intro .btn {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .containerintro .img {
+    text-align: center; /* Center the image within the container */
+    margin-left: 90px;
+  }
+  .containerintro .img img {
+    width: 200px;
+    height: 200px;
+  }
 }

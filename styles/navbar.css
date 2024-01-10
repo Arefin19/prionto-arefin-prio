@@ -1,36 +1,9 @@
-
-/*#######################################3
-*/
-@media screen and (max-width: 600px) {
-  .navbar {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .logo {
-    margin-bottom: 10px;
-  }
-
-  .intro h1 {
-    font-size: 20px;
-  }
-
-  .img {
-    margin-right: 0;
-  }
-
-  .project img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-  }
-}
 /*
 #############################################3
 */
 .navbar {
-  background-color: #ffffff; /* Black background */
-  color: #050505; /* White text */
+  background-color: #ffffff; /* White background */
+  color: #050505; /* Black text */
   padding: 12px;
   flex-direction: row;
   display: flex; /* Make the items horizontal */
@@ -84,4 +57,32 @@
 .navbar a:hover {
   color: rgb(148, 11, 75); /* Add a hover effect */
   border-radius: 5px;
+}
+/*#######################################3
+*/
+@media (max-width: 670px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 6px;
+  }
+
+  .logo {
+    margin-bottom: 0px;
+    margin-right: 315px;
+    margin-top: 18px;
+  }
+
+  .navbar li {
+    margin: 5px 0;
+    margin-left: 18px;
+  }
+  .down .btn {
+    margin-left: 150px;
+  }
+
+  .logo img {
+    max-width: 20px;
+    height: auto;
+  }
 }
