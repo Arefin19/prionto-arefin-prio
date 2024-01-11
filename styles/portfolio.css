@@ -309,4 +309,18 @@ img {
     width: 200px;
     height: 200px;
   }
+  /* .contact-form {
+    max-width: 100%; 
+  }*/
+
+  .contact-form {
+    max-width: 80%; /* Adjust the form width for smaller screens */
+  }
+
+  .toast {
+    width: 50%; /* Adjust the toast width for smaller screens */
+    left: 40%; /* Center horizontally */
+    top: 50%; /* Center vertically */
+    transform: translate(-50%, -50%);
+  }
 }
