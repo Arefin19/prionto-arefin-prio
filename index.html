@@ -65,7 +65,7 @@
         </button>
       </div>
       <div class="img">
-        <img src="./img/prio.jpg"  />
+        <img src="./img/prio.jpg" />
       </div>
     </header>
   </div>
@@ -200,33 +200,69 @@
   <section id="contact">
     <h2>Contact Us</h2>
     <div class="contact-form">
-        <form id="contactForm">
-            <label for="email">Your Email:</label>
-            <input type="email" id="email" name="email" required />
-            <label for="message">Your Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-            <button type="button" onclick="sendEmail()">Send Message</button>
-        </form>
+      <form id="contactForm">
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required />
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required />
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <button type="button" onclick="sendEmail()">Send Message</button>
+      </form>
     </div>
-</section>
+  </section>
+  <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-delay="5000" id="emailToast">
+    <div class="toast-header">
+      <strong class="mr-auto">Email Status</strong>
+      <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="toast-body">
+      <span id="emailStatus"></span>
+    </div>
+  </div>
 
-<script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+  <script>
     emailjs.init("fAnZv2MzwFHKZ82Zv"); // Replace with your Email.js user ID
 
     function sendEmail() {
-        var templateParams = {
-            email: document.getElementById("email").value,
-            message: document.getElementById("message").value
-        };
+      var templateParams = {
+        email: document.getElementById("email").value,
+        name: document.getElementById("name").value,
+        message: document.getElementById("message").value
+      };
 
-        emailjs.send("service_b86qqrm", "template_fgiygmi", templateParams)
-            .then(function(response) {
-                console.log("Email sent successfully:", response);
-            }, function(error) {
-                console.error("Email sendings failed:", error);
-            });
+      emailjs.send("service_b86qqrm", "template_fgiygmi", templateParams)
+        .then(function (response) {
+          console.log("Email sent successfully:", response);
+          showSuccessToast();
+        }, function (error) {
+          console.error("Email sending failed:", error);
+          showErrorToast();
+        });
     }
-</script>
+
+    function showSuccessToast() {
+      document.getElementById("emailStatus").innerText = "Email sent successfully!";
+      var toastElement = new bootstrap.Toast(document.getElementById('emailToast'));
+      toastElement.show();
+    }
+
+    function showErrorToast() {
+      document.getElementById("emailStatus").innerText = "Email sending failed. Please try again.";
+      var toastElement = new bootstrap.Toast(document.getElementById('emailToast'));
+      toastElement.show();
+    }
+
+  </script>
+  
+  
   <footer>
     <div class="footer-container">
       <div class="footer-left">
