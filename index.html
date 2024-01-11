@@ -222,12 +222,12 @@
       <span id="emailStatus"></span>
     </div>
   </div>
-
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
+  
   <script>
     emailjs.init("fAnZv2MzwFHKZ82Zv"); // Replace with your Email.js user ID
 
@@ -261,7 +261,35 @@
     }
 
   </script>
-  
+  <script>
+    function sendEmail() {
+  // Fetch the form element
+  var form = document.getElementById("contactForm");
+
+  // Check if the form is valid
+  if (form.checkValidity()) {
+    // If valid, proceed with sending the email
+    var templateParams = {
+      email: document.getElementById("email").value,
+      name: document.getElementById("name").value,
+      message: document.getElementById("message").value
+    };
+
+    emailjs.send("service_b86qqrm", "template_fgiygmi", templateParams)
+      .then(function (response) {
+        console.log("Email sent successfully:", response);
+        showSuccessToast();
+      }, function (error) {
+        console.error("Email sending failed:", error);
+        showErrorToast();
+      });
+  } else {
+    // If the form is not valid, trigger HTML5 validation messages
+    form.reportValidity();
+  }
+}
+
+  </script>
   
   <footer>
     <div class="footer-container">
