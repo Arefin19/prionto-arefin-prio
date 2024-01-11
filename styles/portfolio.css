@@ -319,7 +319,7 @@ img {
 
   .toast {
     width: 50%; /* Adjust the toast width for smaller screens */
-    left: 40%; /* Center horizontally */
+    left: 50%; /* Center horizontally */
     top: 50%; /* Center vertically */
     transform: translate(-50%, -50%);
   }
