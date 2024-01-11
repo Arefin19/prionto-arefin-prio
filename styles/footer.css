@@ -1,21 +1,29 @@
 footer {
-  background-color: rgb(51, 51, 51); /* Adjust background color */
+  background-color: rgb(51, 51, 51);
   padding: 20px;
-  text-align: center; /* Adjust alignment if needed */
+  text-align: center;
+  position: relative;
 }
 
 .footer-container {
   display: flex;
-  justify-content: space-between; /* Distribute sections evenly */
+  justify-content: space-between;
+}
+
+.footer-left {
+  position: relative;
+  margin: 10px;
 }
 
 .footer-left ul {
   list-style: none;
   padding: 0;
 }
+
 .footer-left h3 {
   color: #fff;
 }
+
 .footer-left li {
   margin-bottom: 10px;
 }
@@ -24,8 +32,18 @@ footer {
   color: #fff;
   text-decoration: none;
 }
+
+.footer-center {
+  position: relative;
+  margin: 10px;
+}
+
 .footer-center h3 {
   color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .footer-right {
@@ -35,6 +53,8 @@ footer {
   justify-content: space-between;
   color: #000;
   padding: 20px;
+  position: relative;
+  margin: 10px;
 }
 
 .footer-right a {
@@ -47,7 +67,7 @@ footer {
 }
 
 .footer-right img {
-  width: 30px; /* Adjust logo size based on your image */
+  width: 30px;
   height: auto;
 }
 
@@ -56,6 +76,10 @@ footer {
   justify-content: space-evenly;
   margin-right: 35px;
   margin-bottom: 130px;
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+  transform: translateX(-50%);
 }
 
 .social-links li {
@@ -65,15 +89,11 @@ footer {
 }
 
 .social-links a {
-  width: 30px; /* Adjust icon size based on your image */
+  width: 30px;
   height: auto;
 }
 
 @media (max-width: 670px) {
-  footer {
-    padding: 15px;
-  }
-
   .footer-container {
     flex-direction: column;
     align-items: center;
@@ -82,10 +102,13 @@ footer {
   .footer-left,
   .footer-center,
   .footer-right {
-    margin-bottom: 20px;
+    margin: 10px 0; /* Adjusted margins for smaller screens */
   }
 
   .social-links {
-    margin-bottom: 20px;
+    position: static; /* Reset position to normal flow */
+    margin: 20px 0; /* Adjusted margin for spacing */
+    justify-content:center; /* Move social links to the right */
+    
   }
 }
