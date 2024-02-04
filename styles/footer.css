@@ -107,8 +107,7 @@ footer {
 
   .social-links {
     position: static; /* Reset position to normal flow */
-    margin: 20px 0; /* Adjusted margin for spacing */
-    justify-content:center; /* Move social links to the right */
-    
+    margin-left: 87%; /* Adjusted margin for spacing */
+    justify-content: center; /* Move social links to the right */
   }
 }

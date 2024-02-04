@@ -333,26 +333,41 @@ img {
     margin-bottom: 10px;
   }
 
-  .containerintro .img {
-    text-align: center; /* Center the image within the container */
-    margin-left: 90px;
+  .aboutme {
+    text-align: center;
   }
-  .containerintro .img img {
-    width: 200px;
-    height: 200px;
+
+  .aboutme img {
+    width: 100%;
   }
-  /* .contact-form {
+
+  .ab-intro {
+    position: static;
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 50%;
+  }
+}
+
+.containerintro .img {
+  text-align: center; /* Center the image within the container */
+  margin-left: 90px;
+}
+.containerintro .img img {
+  width: 200px;
+  height: 200px;
+}
+/* .contact-form {
     max-width: 100%; 
   }*/
 
-  .contact-form {
-    max-width: 80%; /* Adjust the form width for smaller screens */
-  }
+.contact-form {
+  max-width: 80%; /* Adjust the form width for smaller screens */
+}
 
-  .toast {
-    width: 50%; /* Adjust the toast width for smaller screens */
-    left: 50%; /* Center horizontally */
-    top: 50%; /* Center vertically */
-    transform: translate(-50%, -50%);
-  }
+.toast {
+  width: 50%; /* Adjust the toast width for smaller screens */
+  left: 50%; /* Center horizontally */
+  top: 50%; /* Center vertically */
+  transform: translate(-50%, -50%);
 }
