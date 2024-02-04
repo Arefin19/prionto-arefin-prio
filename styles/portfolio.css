@@ -59,6 +59,38 @@ header {
   object-fit: cover;
   border-radius: 50%;
 }
+.aboutme {
+  position: relative;
+}
+
+.aboutme img {
+  justify-content: center;
+  width: 40%;
+  height: auto;
+  border-radius: 5px;
+  margin-top: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.ab-intro {
+  position: absolute;
+  top: 40%; /* Adjust the top position as needed */
+  left: 72%; /* Place it at the center of the container */
+  transform: translateX(-50%); /* Center it precisely */
+  width: 50%; /* Set a maximum width for better responsiveness */
+  background-color: #f8f8f8; /* Background color for the quote */
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  font-style: italic;
+  text-align: center;
+  quotes: "\201C""\201D""\2018""\2019"; /* Define the quote symbols */
+  content: open-quote; /* Add the opening quote symbol before the text */
+}
+
+.ab-intro::after {
+  content: close-quote; /* Add the closing quote symbol after the text */
+}
 section {
   max-width: 800px;
   margin: 2em auto;
