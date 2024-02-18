@@ -1,14 +1,22 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.toggle-container {
+  position: absolute;
+  top: 40px;
+  right: 20px; /* Positioning on the right side */
 }
-
-.toggle-container img {
-  width: 30px;
+.bulb {
+  position: relative;
+  cursor: pointer;
+}
+.white-bulb,
+.yellow-bulb {
+  position: absolute;
+  top: 50%; /* Center image vertically */
+  left: 50%; /* Center image horizontally */
+  transform: translate(-50%, -50%); /* Adjust position based on image size */
+  width: 30px; /* Set desired image width */
   object-fit: contain;
 }
+
 /* .toggle-btn {
   background-color: #3498db;
   color: #fff;
