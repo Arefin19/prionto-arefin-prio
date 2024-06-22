@@ -23,6 +23,9 @@
 .navbar li {
   margin-right: 20px; /* Add spacing between items */
 }
+.intro a {
+  text-decoration: none;
+}
 
 .navbar a {
   text-decoration: none; /* Remove link underlines */
@@ -32,7 +35,7 @@
   align-items: center;
 }
 
-.btn a {
+.button {
   text-decoration: none;
   background-color: rgb(240, 173, 206);
   color: #050505;
@@ -41,13 +44,25 @@
   padding: 10px 15px;
   border: 1px solid rgb(240, 173, 206);
   overflow: hidden;
+  display: flex;
+  align-items: center;
+
 }
-.btn img {
+.button img {
   height: 10px;
   width: 15px;
 }
-
-.btn a:hover {
+.navbar button:hover{
+  color: rgb(148, 11, 75);
+  border-radius: 5px;
+  background-color: transparent;
+}
+.intro-button {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.intro button:hover {
   color: white;
   border-radius: 5px;
   background-color: transparent;

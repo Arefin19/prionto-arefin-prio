@@ -301,7 +301,9 @@ img {
   padding: 10px;
   text-align: center; /* Center header text */
 }
-
+button {
+  border-width: 0;
+}
 /*
 ###################################################
 */
@@ -327,7 +329,7 @@ img {
     margin-top: 10px;
   }
 
-  .intro .btn {
+  .intro .button {
     margin-right: 0;
     margin-bottom: 10px;
     overflow: hidden;
@@ -371,6 +373,4 @@ img {
   top: 50%; /* Center vertically */
   transform: translate(-50%, -50%);
 }
-button {
-  border-width: 0;
-}
+
