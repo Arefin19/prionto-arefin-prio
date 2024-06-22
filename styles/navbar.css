@@ -31,16 +31,16 @@
   display: flex;
   align-items: center;
 }
+
 .btn a {
   text-decoration: none;
-}
-.btn a {
   background-color: rgb(240, 173, 206);
   color: #050505;
   border: none;
   border-radius: 5px;
   padding: 10px 15px;
   border: 1px solid rgb(240, 173, 206);
+  overflow: hidden;
 }
 .btn img {
   height: 10px;
